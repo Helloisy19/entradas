@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="entradas.css">
+    <title>Igreja Santa Fé_Tesouraria</title>
+
+</head>
+
+<body style="background: linear-gradient(to right, rgb(176, 236, 212), rgb(193, 221, 204)); display: flex;">
+
+    <!-- MENU LATERAL -->
+    <aside class="menu_lateral">
+        <div class="botao">
+            <button id="voltar"><<<<</button>
+        </div>
+        <nav class="menu">
+            <button id="pf"><img src="painel financeiro.png" alt="" width="25" height="25"> Painel Financeiro</button>
+            <button id="d"><img src="deposito - Copia.png" alt="" width="20" height="20">Depositos</button>
+            <button id="c" ><img src="comprovante - Copia.png" alt="" width="20" height="20">Comprovantes</button>
+            <button id="r"><img src="informacao-financeira - Copia.png" alt="" width="20" height="20">Relatorio</button>
+        </nav>
+    </aside>
+
+    <main style="flex: 1; padding: 20px;">
+        <h1 id="ent">Entradas</h1>
+        <p id="en">Transações de dízimos e ofertas da igreja.</p>
+        
+        <div class="fu_add">
+            <div id="add_tran">+ Add nova transação</div>
+        </div>
+        
+        <div class="area_tabela">
+    <table class="tabela">
+        <thead>
+            <tr>
+                <th>DATA</th>
+                <th>VALOR</th>
+                <th>CONTRIBUINTE</th>
+                <th>TIPO</th>
+            </tr>
+        </thead>
+
+        <tbody id="novas_entradas"></tbody>
+    </table>
+</div>
+        
+    </main>
+
+    <div class="seg_tel">
+        <div class="fun_add">
+            <h3 id="t">Nova Entrada Financeira</h3>
+            <form id="form_entrada">>
+                        <!-- Campos do formulário -->
+                <div class="n">
+                <label for="nome">Nome do Contribuinte</label>
+                <input type="text" id="nome" placeholder="Ex: Maria da Silva" name="nome" required>
+                </div>
+
+                <div class="ti">
+                <label for="tipo">Tipo de Entrada</label>
+                <select name="tipo" id="tipo" placeholder="Selecione o tipo" required>
+                    <option value="" disabled selected>Selecione o tipo</option>
+                    <option value="dizimo">Dízimo</option>
+                    <option value="oferta">Oferta</option>
+                    <option value="vendas">Vendas dos Departamentos</option>
+                </select>
+                </div>
+
+                <div class="v">
+                <label for="valor">Valor</label>
+                <input type="number" id="valor"  min="0.01" step="0.01" placeholder="R$0,00" name="valor" required>
+                </div>
+
+                <div class="d">
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" required>
+                </div>
+                <button type="submit" id="ad">SALVAR ENTRADA</button>
+            </form>
+        </div>
+    </div>
+     
+    <script src="entradas.js"></script>
+    
+</body
+</html>
