@@ -12,7 +12,7 @@ const valor = document.getElementById("valor");
 const data = document.getElementById("data");
 const tabela = document.getElementById("novas_entradas");
 
-const api_url = "http://localhost:8080/tesouraria/entradas";
+const api_url = "https://tesoureiroback-1.onrender.com/tesouraria/entradas";
 
 function formatarValor(valor) {
     return Number(valor).toLocaleString("pt-BR", {
