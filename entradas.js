@@ -130,7 +130,7 @@ formulario.addEventListener("submit", async function(event) {
 
         console.log("Entrada cadastrada:", entradaSalva);
 
-        alert("Entrada cadastrada com sucesso!");
+        /*alert("Entrada cadastrada com sucesso!");*/
 
         formulario.reset();
 
